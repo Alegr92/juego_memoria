@@ -1,0 +1,202 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(209, 0, 116, 1) 11.2%,
+    rgba(110, 44, 107, 1) 91.1%
+  );
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.juego {
+  width: 40%;
+  height: 80vh;
+  background-color: rgb(240, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+  border-radius: 2rem;
+}
+.boton-juego {
+  width: 7vw;
+  height: 13vh;
+  font-size: 3rem;
+  margin: 0.1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.juego h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  color: white;
+}
+
+.aside {
+  width: 40%;
+  height: 80vh;
+  background-color: rgb(240, 255, 255, 0.4);
+  border-radius: 2rem;
+}
+
+.aciertos {
+  height: 25vh;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.seg-restantes {
+  height: 25vh;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.movimientos {
+  height: 25vh;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.nuevo-juego {
+  width: 150px;
+  height: 80px;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+}
+
+@media (max-width: 1200px) {
+  body {
+    flex-direction: column;
+  }
+
+  .juego {
+    width: 55%;
+    height: 40%;
+  }
+
+  .juego h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .boton-juego {
+    width: 6vw;
+    height: 6vh;
+    font-size: 2rem;
+  }
+
+  .nuevo-juego {
+    width: 130px;
+    height: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .aside {
+    width: 55%;
+    height: 40%;
+  }
+
+  .aciertos {
+    height: 13vh;
+    font-size: 1rem;
+  }
+
+  .seg-restantes {
+    height: 13vh;
+    font-size: 1rem;
+  }
+
+  .movimientos {
+    height: 13vh;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .boton-juego {
+    width: 8vw;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    gap: 1rem;
+  }
+
+  .juego {
+    width: 80%;
+    height: 65%;
+  }
+  .juego h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .boton-juego {
+    width: 15vw;
+    height: 9.5vh;
+    font-size: 2rem;
+  }
+
+  .nuevo-juego {
+    width: 150px;
+    height: 80px;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+  .aside {
+    width: 80%;
+    height: 25%;
+  }
+  .aciertos {
+    height: 8vh;
+    font-size: 1rem;
+  }
+
+  .seg-restantes {
+    height: 8vh;
+    font-size: 1rem;
+  }
+
+  .movimientos {
+    height: 8vh;
+    font-size: 1rem;
+  }
+}

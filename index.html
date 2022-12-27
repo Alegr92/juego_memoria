@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Cinzel&family=Merienda&family=Raleway:wght@200;400;500&display=swap"
+    rel="stylesheet">
+  <title>Juego de memoria</title>
+</head>
+
+<body>
+  <main class="juego">
+    <h1>Juego de memoria</h1>
+    <table>
+      <tr>
+        <td><button class="boton-juego" id="0" onclick="flip(0)"></button></td>
+        <td><button class="boton-juego" id="1" onclick="flip(1)"></button></td>
+        <td><button class="boton-juego" id="2" onclick="flip(2)"></button></td>
+        <td><button class="boton-juego" id="3" onclick="flip(3)"></button></td>
+      </tr>
+      <tr>
+        <td><button class="boton-juego" id="4" onclick="flip(4)"></button></td>
+        <td><button class="boton-juego" id="5" onclick="flip(5)"></button></td>
+        <td><button class="boton-juego" id="6" onclick="flip(6)"></button></td>
+        <td><button class="boton-juego" id="7" onclick="flip(7)"></button></td>
+      </tr>
+      <tr>
+        <td><button class="boton-juego" id="8" onclick="flip(8)"></button></td>
+        <td><button class="boton-juego" id="9" onclick="flip(9)"></button></td>
+        <td><button class="boton-juego" id="10" onclick="flip(10)"></button></td>
+        <td><button class="boton-juego" id="11" onclick="flip(11)"></button></td>
+      </tr>
+      <tr>
+        <td><button class="boton-juego" id="12" onclick="flip(12)"></button></td>
+        <td><button class="boton-juego" id="13" onclick="flip(13)"></button></td>
+        <td><button class="boton-juego" id="14" onclick="flip(14)"></button></td>
+        <td><button class="boton-juego" id="15" onclick="flip(15)"></button></td>
+      </tr>
+    </table>
+
+    <input class="nuevo-juego" type="button" value="Nuevo juego" onclick="location.reload()">
+  </main>
+  <section class="aside">
+    <div class="aciertos">
+      <h2 id="aciertos">Aciertos : 0</h2>
+    </div>
+    <div class="seg-restantes">
+      <h2 id="seg-restantes">Segundos restantes : 25</h2>
+    </div>
+    <div class="movimientos">
+      <h2 id="movimientos">Movimientos : 0</h2>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
